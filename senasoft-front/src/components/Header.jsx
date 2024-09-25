@@ -36,7 +36,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white rounded-3xl">
+    <header className="bg-white shadow-2xl rounded-3xl">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
@@ -57,18 +57,17 @@ export default function Header() {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
             </PopoverButton>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+            Inicio
+          </a>
+          <a href="/forum" className="text-sm font-semibold leading-6 text-gray-900">
+            Foro
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+            Retos
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
